@@ -1,0 +1,38 @@
+# Git & VCS
+.git
+.gitignore
+.github/
+
+# Environment, Secrets & Keys
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*sa-key*.json
+*credential*.json
+*service-account*.json
+*secret*.json
+client_secrets*.json
+
+# Python & Testing Caches
+.pytest_cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# Local Data, Databases & Logs
+data/
+output/
+reports/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+scj_rag.db
+

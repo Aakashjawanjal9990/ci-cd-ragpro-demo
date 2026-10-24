@@ -1,0 +1,199 @@
+{
+  "document_id": "INSC_2023_CA_1042",
+  "file_path": "data\\sample_pdfs\\INSC_2023_CA_1042.pdf",
+  "file_sha256": "85d72d9b63f1460012922b84fee66b4490dcba964b7bf1416cfd99ff02ea85b4",
+  "total_pages": 3,
+  "total_chunks": 16,
+  "status": "COMPLETED",
+  "ocr_applied_pages": [
+    1,
+    2,
+    3
+  ],
+  "parser_used": "llamaparse",
+  "aggregated_metadata": {
+    "case_number": "CIVIL APPEAL NO. 1042 OF 2023",
+    "appellant": "State of Maharashtra & Ors",
+    "respondent": "ABC Infrastructure Ltd. & Anr",
+    "date_of_judgment": "24th February, 2023",
+    "judges": [
+      "Hon'ble Mr. Justice D.Y. Chandrachud",
+      "Hon'ble Mr. Justice P.S. Narasimha",
+      "Dr. Dhananjaya Y. Chandrachud, CJI"
+    ]
+  },
+  "pages": [
+    {
+      "document_id": "INSC_2023_CA_1042",
+      "original_page_number": 1,
+      "page_metadata": {
+        "case_number": "CIVIL APPEAL NO. 1042 OF 2023",
+        "appellant": "State of Maharashtra & Ors",
+        "respondent": "ABC Infrastructure Ltd. & Anr",
+        "date_of_judgment": "24th February, 2023",
+        "judges": [
+          "Hon'ble Mr. Justice D.Y. Chandrachud",
+          "Hon'ble Mr. Justice P.S. Narasimha",
+          "Dr. Dhananjaya Y. Chandrachud, CJI"
+        ]
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "content": "# **IN THE SUPREME COURT OF INDIA**\n# **CIVIL APPELLATE JURISDICTION**\n# **CIVIL APPEAL NO. 1042 OF 2023**",
+          "chunk_metadata": {
+            "section_heading": null
+          },
+          "chunk_id": "INSC_2023_CA_1042_p1_c1"
+        },
+        {
+          "chunk_index": 2,
+          "content": "State of Maharashtra & Ors. ... Appellant(s)",
+          "chunk_metadata": {
+            "section_heading": null
+          },
+          "chunk_id": "INSC_2023_CA_1042_p1_c2"
+        },
+        {
+          "chunk_index": 3,
+          "content": "**VERSUS**",
+          "chunk_metadata": {
+            "section_heading": null
+          },
+          "chunk_id": "INSC_2023_CA_1042_p1_c3"
+        },
+        {
+          "chunk_index": 4,
+          "content": "ABC Infrastructure Ltd. & Anr. ... Respondent(s)",
+          "chunk_metadata": {
+            "section_heading": null
+          },
+          "chunk_id": "INSC_2023_CA_1042_p1_c4"
+        },
+        {
+          "chunk_index": 5,
+          "content": "DATED: 24th February, 2023",
+          "chunk_metadata": {
+            "section_heading": null
+          },
+          "chunk_id": "INSC_2023_CA_1042_p1_c5"
+        },
+        {
+          "chunk_index": 6,
+          "content": "CORAM: Hon'ble Mr. Justice D.Y. Chandrachud, CJI, Hon'ble Mr. Justice P.S. Narasimha",
+          "chunk_metadata": {
+            "section_heading": null
+          },
+          "chunk_id": "INSC_2023_CA_1042_p1_c6"
+        },
+        {
+          "chunk_index": 7,
+          "content": "Dr. Dhananjaya Y. Chandrachud, CJI. 1. Leave granted. This appeal arises from a final judgment and order dated 15 November 2022 passed by the High Court of Judicature at Bombay in Writ Petition No. 4501 of 2021.",
+          "chunk_metadata": {
+            "section_heading": "JUDGMENT"
+          },
+          "chunk_id": "INSC_2023_CA_1042_p1_c7"
+        },
+        {
+          "chunk_index": 8,
+          "content": "2. The primary question of law involved in this appeal relates to the interpretation of statutory arbitration clauses under the state procurement guidelines.",
+          "chunk_metadata": {
+            "section_heading": "JUDGMENT"
+          },
+          "chunk_id": "INSC_2023_CA_1042_p1_c8"
+        }
+      ]
+    },
+    {
+      "document_id": "INSC_2023_CA_1042",
+      "original_page_number": 2,
+      "page_metadata": {
+        "case_number": null,
+        "appellant": null,
+        "respondent": null,
+        "date_of_judgment": "12 June 2018",
+        "judges": null
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "content": "3. The respondent contractor entered into a concession agreement with the appellant on 12 June 2018 for the construction of a state highway bypass. The completion timeline specified a period of thirty-six months from the appointment date.",
+          "chunk_metadata": {
+            "section_heading": "FACTS AND BACKGROUND"
+          },
+          "chunk_id": "INSC_2023_CA_1042_p2_c1"
+        },
+        {
+          "chunk_index": 2,
+          "content": "4. Disputes arose regarding delays in right-of-way handover and environmental clearances. The respondent invoked arbitration under clause 24.3 of the concession agreement.",
+          "chunk_metadata": {
+            "section_heading": "FACTS AND BACKGROUND"
+          },
+          "chunk_id": "INSC_2023_CA_1042_p2_c2"
+        },
+        {
+          "chunk_index": 3,
+          "content": "5. Learned Senior Counsel appearing on behalf of the appellants contended that the High Court exceeded its jurisdiction under Section 11 of the Arbitration and Conciliation Act, 1996 by delving into arbitrability of non-notified claims.",
+          "chunk_metadata": {
+            "section_heading": "SUBMISSIONS OF COUNSEL"
+          },
+          "chunk_id": "INSC_2023_CA_1042_p2_c3"
+        }
+      ]
+    },
+    {
+      "document_id": "INSC_2023_CA_1042",
+      "original_page_number": 3,
+      "page_metadata": {
+        "case_number": null,
+        "appellant": null,
+        "respondent": null,
+        "date_of_judgment": null,
+        "judges": null
+      },
+      "chunks": [
+        {
+          "chunk_index": 1,
+          "content": "6. We have considered the rival submissions and examined the record. The law regarding the scope of pre-referral judicial scrutiny under Section 11(6) is well-settled through the decisions of this Court.",
+          "chunk_metadata": {
+            "section_heading": "ANALYSIS AND CONCLUSION"
+          },
+          "chunk_id": "INSC_2023_CA_1042_p3_c1"
+        },
+        {
+          "chunk_index": 2,
+          "content": "7. For the reasons recorded above, the appeal is allowed. The impugned judgment of the High Court is set aside. Pending application(s), if any, stand disposed of.",
+          "chunk_metadata": {
+            "section_heading": "ANALYSIS AND CONCLUSION"
+          },
+          "chunk_id": "INSC_2023_CA_1042_p3_c2"
+        },
+        {
+          "chunk_index": 3,
+          "content": "................................................................................CJI. (Dr. Dhananjaya Y. Chandrachud)",
+          "chunk_metadata": {
+            "section_heading": "ANALYSIS AND CONCLUSION"
+          },
+          "chunk_id": "INSC_2023_CA_1042_p3_c3"
+        },
+        {
+          "chunk_index": 4,
+          "content": "................................................................................J. (P.S. Narasimha)",
+          "chunk_metadata": {
+            "section_heading": "ANALYSIS AND CONCLUSION"
+          },
+          "chunk_id": "INSC_2023_CA_1042_p3_c4"
+        },
+        {
+          "chunk_index": 5,
+          "content": "New Delhi; February 24, 2023.",
+          "chunk_metadata": {
+            "section_heading": "ANALYSIS AND CONCLUSION"
+          },
+          "chunk_id": "INSC_2023_CA_1042_p3_c5"
+        }
+      ]
+    }
+  ],
+  "error_message": null
+}

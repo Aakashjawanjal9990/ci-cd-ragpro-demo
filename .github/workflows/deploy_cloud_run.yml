@@ -1,0 +1,80 @@
+name: CI/CD Pipeline - Cloud Run Jobs
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  PROJECT_ID: sc-judgments-rag
+  REGION: asia-south1
+  JOB_NAME: scj-ingest-1950-2026
+  REPO_NAME: scj-rag-repo
+  IMAGE_TAG: asia-south1-docker.pkg.dev/sc-judgments-rag/scj-rag-repo/scj-pipeline:latest
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  # 1. Automated Test Suite
+  test:
+    name: Run Automated Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install System Dependencies (Tesseract OCR)
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-eng
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run PyTest
+        env:
+          LLAMA_CLOUD_API_KEY: "llx-mock-ci-test-key-12345"
+        run: |
+          pytest tests/ -v
+
+  # 2. Build & Deploy to Cloud Run Jobs
+  deploy:
+    name: Build & Deploy to Cloud Run
+    needs: test
+    if: ${{ secrets.GCP_SA_KEY != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Setup Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ env.PROJECT_ID }}
+
+      - name: Build & Push Image via Cloud Build
+        run: |
+          gcloud builds submit --tag ${{ env.IMAGE_TAG }} .
+
+      - name: Update Cloud Run Job
+        run: |
+          # Updates existing job with newly built image
+          gcloud run jobs update ${{ env.JOB_NAME }} \
+            --image ${{ env.IMAGE_TAG }} \
+            --region ${{ env.REGION }}
+
